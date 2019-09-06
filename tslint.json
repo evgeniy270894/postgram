@@ -1,0 +1,68 @@
+{
+  "rulesDirectory": ["./"],
+  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-plugin-prettier", "tslint-react"],
+  "defaultSeverity": "warning",
+  "rules": {
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": ["always"],
+    "jsx-no-lambda": false,
+    "jsx-curly-spacing": "always",
+    "no-debugger": true,
+    "member-access": [true, "no-public"],
+    "no-duplicate-variable": true,
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "prettier": [
+      true,
+      {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid",
+        "proseWrap": "never"
+      }
+    ],
+    "arrow-return-shorthand": [true, "multiline"],
+    "cyclomatic-complexity": [true, 20],
+    "eofline": false,
+    "forin": false,
+    "linebreak-style": [true, "LF"],
+    "max-line-length": {
+      "options": [180]
+    },
+    "no-consecutive-blank-lines": [true, 1],
+    "no-object-literal-type-assertion": false,
+    "no-mergeable-namespace": true,
+    "no-reference-import": true,
+    "no-switch-case-fall-through": true,
+    "no-unnecessary-callback-wrapper": true,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-first",
+        "named-imports-order": "lowercase-last"
+      }
+    ],
+    "prefer-method-signature": true,
+    "prefer-template": [true],
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "never",
+        "constructor": "never",
+        "method": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "switch-default": true
+  }
+}
